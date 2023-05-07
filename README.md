@@ -7,7 +7,7 @@ I'm improving this project bit by bit in my spare time, and it's still in the ea
 
 # About
 
- I decided to take on this challenge to push myself out of my comfort zone and to master my skills in a language I'm passionate about. I am treating it primarily as a coding challenge, but I'll also try my best to make it look, let's say, not unpleasant to look at.
+ I decided to take on this challenge to push myself out of my comfort zone and to master my skills in a language I'm passionate about. I am treating it primarily as a coding challenge, but I'll also try my best to make it , let's say, not unpleasant to look at.
 
 
 <h1 align="center">I will be adding more details about the project later on!</h1>
