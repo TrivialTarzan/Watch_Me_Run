@@ -12,4 +12,4 @@ I'm improving this project bit by bit in my spare time, and it's still in the ea
 
 <h1 align="center">I will be adding more details about the project later on!</h1>
 
-<p align="center"><img src="Picture_watch.png" alt="Logo" width="400" height="300"></p>
+<p align="center"><img src="Picture_watch.png" alt="Logo" width="600" height="400"></p>
