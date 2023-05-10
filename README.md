@@ -17,5 +17,7 @@ I'm improving this project bit by bit in my spare time, and it's still in the ea
 ## Credits
 
 Music: https://www.FesliyanStudios.comand and patrickdearteaga.com
+
 Pixel Enemies by Invalid.User
+
 Backgrouns: https://edermunizz.itch.io/, Luis Zuno, https://royal-naym.itch.io/ 
