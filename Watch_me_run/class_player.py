@@ -22,14 +22,10 @@ class Player(pygame.sprite.Sprite):
         self.jump_image = player_animation.jump()
         
         self.image = self.movement[0 if self.change_direction else 1][self.change_index]
-        self.rect = self.image.get_rect(midbottom = (60, 330))
-        
-        # self.jump_sound = pygame.mixer.Sound("PyGame\\another game\sounds\jump.mp3")
-        # self.jump_sound.set_volume(0.2)
+        self.rect = self.image.get_rect(midbottom = (60, 330) 
     
     def stage_update(self, stage):
         self.stage = stage
-    
         
     def keys_input(self):
         keys = pygame.key.get_pressed()
