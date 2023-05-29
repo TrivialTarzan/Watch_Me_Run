@@ -4,15 +4,13 @@ from class_player import Player
 from class_enemies import Enemies
 import game_functions
 
-
-
 # initialize pygame
 pygame.init()
 
 # important constants
 WIDTH = 800 
 HEIGHT = 400
-FPS = 60
+FPS = 25
 STARTING_POINT = 60
 VELOCITY = 3
 
@@ -26,7 +24,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 pygame.display.set_caption("Watch Me Run!")
 
 clock = pygame.time.Clock()
-stage = 1
+stage = 2
+
+#  the time it takes enemies to respawn 
+respawn_time = 4500
 
 # Groups
 player = pygame.sprite.GroupSingle()
@@ -37,9 +38,9 @@ enemies_group = pygame.sprite.Group()
 # setting up the TIMER that creates the enemy creature at a fixed time interval
 enemies_timer = pygame.USEREVENT + 1
 if stage == 1:
-    pygame.time.set_timer(enemies_timer, 4500)
+    pygame.time.set_timer(enemies_timer, respawn_time)
 elif stage == 2:
-    pygame.time.set_timer(enemies_timer, 4500)   
+    pygame.time.set_timer(enemies_timer, respawn_time)   
 
             
 def collision_check():
@@ -55,7 +56,7 @@ def collision_check():
 
 
 def main():
-    global stage
+    global stage, respawn_time
     
     active = False
     welcome_screen = True
