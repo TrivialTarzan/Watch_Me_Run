@@ -4,6 +4,10 @@ from class_player import Player
 from class_enemies import Enemies
 import game_functions
 
+
+## GIBBERSIH
+
+
 # initialize pygame
 pygame.init()
 
