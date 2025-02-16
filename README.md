@@ -14,7 +14,9 @@ I'm improving this project bit by bit in my spare time, and it's still in the ea
 
 ## Credits
 
-Music: https://www.FesliyanStudios.comand and patrickdearteaga.com
+Music: 
+- patrickdearteaga.com
+- Royalty-free background banger by David Renda, Fesliyan Studios -> https://www.fesliyanstudios.com/
 
 Pixel Enemies by Invalid.User
 

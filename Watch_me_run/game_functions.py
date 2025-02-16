@@ -55,6 +55,13 @@ def check_if_space_pressed():
     else: 
         return False
     
+def bg_music():
+    bg_music_path = os.path.join(BASE_DIR, "sounds", "BG_David_Renda.mp3")
+    
+    bg_music = pygame.mixer.Sound(bg_music_path)
+    bg_music.set_volume(0.2)
+    
+    return bg_music
 
 change_screen_index = 0 
 

@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 pygame.display.set_caption("Watch_Me_Run!")
 
 clock = pygame.time.Clock()
-stage = 2
+stage = 1
 
 #  the time it takes enemies to respawn
 respawn_time = 4500
@@ -61,8 +61,11 @@ def main():
     welcome_screen = True
     start_time = 0
 
+    # Load background music
+    music = game_functions.bg_music()
+
     while True:
-        # event loop checks for all possible inputs
+        # Event loop checks for all possible inputs
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -71,20 +74,20 @@ def main():
             if active:
                 if event.type == enemies_timer:
                     enemies_group.add(Enemies(stage, MAX_UP, MAX_DOWN))
-
             else:
                 if event.type == pygame.KEYUP and event.key == pygame.K_SPACE:
                     active = True
                     start_time = pygame.time.get_ticks()
+                    music.play(-1)  # Play music in a loop when game starts ✅
 
         if active:
             welcome_screen = False
-            game_functions.game_screen(stage)  # draw BG SCREEN
+            game_functions.game_screen(stage)  # Draw BG SCREEN
 
-            player.draw(SCREEN)  # draw PLAYER
+            player.draw(SCREEN)  # Draw PLAYER
             player.update()
 
-            enemies_group.draw(SCREEN)  # draw ENEMIES
+            enemies_group.draw(SCREEN)  # Draw ENEMIES
             enemies_group.update()
 
             active = collision_check()
@@ -93,7 +96,6 @@ def main():
 
         clock.tick(FPS)
         pygame.display.update()
-
 
 if __name__ == "__main__":
     main()
